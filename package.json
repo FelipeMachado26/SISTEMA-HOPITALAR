@@ -1,26 +1,27 @@
 {
   "name": "projeto-tcc",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": " nodemon --exec ts-node ./src/index.ts ",
-    "start":" node ./dist/index.js",
-    "build":"tsc"
-
+    "dev": "tsx watch ./src/index.ts",
+    "start": " node ./dist/index.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
 }
